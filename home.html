@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Desserts</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Desserts</h1>
+      <div class="product-list">
+        <div
+          class="product-card"
+          data-name="Waffle with Berries"
+          data-price="6.50"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-waffle-desktop.jpg"
+            alt="Waffle with Berries"
+          />
+          <div class="product-title">Waffle with Berries</div>
+          <div class="product-type">Waffle</div>
+          <div class="product-price">$6.50</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div
+          class="product-card"
+          data-name="Vanilla Bean Crème Brûlée"
+          data-price="7.00"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-creme-brulee-desktop.jpg"
+            alt="Vanilla Bean Crème Brûlée"
+          />
+          <div class="product-title">Vanilla Bean Crème Brûlée</div>
+          <div class="product-type">Crème Brûlée</div>
+          <div class="product-price">$7.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div
+          class="product-card"
+          data-name="Macaron Mix of Five"
+          data-price="8.00"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-macaron-desktop.jpg"
+            alt="Macaron Mix of Five"
+          />
+          <div class="product-title">Macaron Mix of Five</div>
+          <div class="product-type">Macaron</div>
+          <div class="product-price">$8.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div
+          class="product-card"
+          data-name="Classic Tiramisu"
+          data-price="5.50"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-tiramisu-desktop.jpg"
+            alt="Classic Tiramisu"
+          />
+          <div class="product-title">Classic Tiramisu</div>
+          <div class="product-type">Tiramisu</div>
+          <div class="product-price">$5.50</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div
+          class="product-card"
+          data-name="Pistachio Baklava"
+          data-price="4.00"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-baklava-desktop.jpg"
+            alt="Pistachio Baklava"
+          />
+          <div class="product-title">Pistachio Baklava</div>
+          <div class="product-type">Baklava</div>
+          <div class="product-price">$4.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Lemon Meringue " data-price="5.00">
+          <img
+            class="product-img"
+            src="./assets/images/image-meringue-desktop.jpg"
+            alt="Lemon Meringue Pie"
+          />
+          <div class="product-title">Lemon Meringue Pie</div>
+          <div class="product-type">Pie</div>
+          <div class="product-price">$5.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Strawberry cake" data-price="4.50">
+          <img
+            class="product-img"
+            src="./assets/images/image-cake-desktop.jpg"
+            alt="Red Velvet Cake"
+          />
+          <div class="product-title">Red Velvet Cake</div>
+          <div class="product-type">Cake</div>
+          <div class="product-price">$4.50</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div
+          class="product-card"
+          data-name="Salted Caramel Brownie"
+          data-price="5.50"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-brownie-desktop.jpg"
+            alt="Salted Caramel Brownie"
+          />
+          <div class="product-title">Salted Caramel Brownie</div>
+          <div class="product-type">Brownie</div>
+          <div class="product-price">$5.50</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div
+          class="product-card"
+          data-name="Vanilla Panna Cotta"
+          data-price="6.50"
+        >
+          <img
+            class="product-img"
+            src="./assets/images/image-panna-cotta-desktop.jpg"
+            alt="Vanilla Panna Cotta"
+          />
+          <div class="product-title">Vanilla Panna Cotta</div>
+          <div class="product-type">Panna Cotta</div>
+          <div class="product-price">$6.50</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h2>Cart (0)</h2>
+        <img
+          src="./assets/images/illustration-empty-cart.svg"
+          alt="your cart is empty"
+        />
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button id="confirm-order">Confirm Order</button>
+      </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Order Confirmed</h2>
+        <button onclick="closeModal()">Done</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
